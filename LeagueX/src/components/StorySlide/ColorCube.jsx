@@ -110,7 +110,7 @@ const ColorCube = ({route}) => {
   ];
 
   const matchingDetails = details.filter(item => item.id === cardDetails.id);
-  // console.log('matchingDetails', matchingDetails);
+  console.log('matchingDetails', matchingDetails);
 
   const matchingIndex = details.findIndex(item => item.id === cardDetails.id);
   // console.log('matchingIndex', matchingIndex);

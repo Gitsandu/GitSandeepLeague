@@ -13,6 +13,7 @@ import image9 from './img/image9.jpg';
 import image10 from './img/image10.jpg';
 import {Searchbar} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/Ionicons'; 
+import { useNavigation } from '@react-navigation/native';
 
 
 const {width, height} = Dimensions.get('window');

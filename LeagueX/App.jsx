@@ -27,10 +27,15 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="CardSwiper" screenOptions={{ headerShown: false }} >
-        <Stack.Screen name="CardSwiper"  component={CardSwiper} />
+        <Stack.Screen name="CardSwiper"  component={CardDeck} />
         <Stack.Screen name="ColorCube" component={ColorCube} />
       </Stack.Navigator>
     </NavigationContainer>
+    // <SafeAreaView style={styles.safeArea}>
+    //   <View style={styles.container}>
+    //     <CardDeck></CardDeck>
+    //   </View>
+    // </SafeAreaView>
   );
 }
 
