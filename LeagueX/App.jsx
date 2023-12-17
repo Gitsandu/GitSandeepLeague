@@ -14,12 +14,9 @@ import {
   View,
 } from 'react-native';
 import ColorCube from './src/components/StorySlide/ColorCube';
-import CardSwiper from './src/components/StorySlide/CardSwiper';
-import TiltedCard from './src/components/StorySlide/TiltedCard';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import CardDeck from './src/components/StorySlide/CardDeck';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 
@@ -31,11 +28,6 @@ function App() {
         <Stack.Screen name="ColorCube" component={ColorCube} />
       </Stack.Navigator>
     </NavigationContainer>
-    // <SafeAreaView style={styles.safeArea}>
-    //   <View style={styles.container}>
-    //     <CardDeck></CardDeck>
-    //   </View>
-    // </SafeAreaView>
   );
 }
 
